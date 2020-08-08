@@ -1,0 +1,9 @@
+carnival.troubleshooting: true
+
+carnival:
+  id:
+    enabled: true
+    algorithm: snowflake
+    snowflake:
+      worker-id: 0
+      data-center-id: 0

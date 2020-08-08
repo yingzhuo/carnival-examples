@@ -9,6 +9,7 @@
     <modules>
         <module>examples-patchca-stateless</module>
         <module>examples-patchca-stateful</module>
+        <module>examples-id-snowflake</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -38,11 +39,6 @@
             </dependency>
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
-                <artifactId>carnival-spring-boot-starter-config</artifactId>
-                <version>${carnival.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-json</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
@@ -54,6 +50,11 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-patchca</artifactId>
+                <version>${carnival.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>carnival-spring-boot-starter-id</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
 
