@@ -1,0 +1,9 @@
+carnival.troubleshooting: true
+
+carnival:
+  patchca:
+    enabled: true
+    mode: stateless
+    servlet-filter:
+      url-patterns:
+        - "/captcha.png"
