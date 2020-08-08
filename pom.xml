@@ -10,6 +10,7 @@
         <module>examples-patchca-stateless</module>
         <module>examples-patchca-stateful</module>
         <module>examples-id-snowflake</module>
+        <module>examples-password-encoder</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -55,6 +56,11 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-id</artifactId>
+                <version>${carnival.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>carnival-spring-boot-starter-password</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
 

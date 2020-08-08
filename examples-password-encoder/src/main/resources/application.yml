@@ -1,0 +1,7 @@
+carnival.troubleshooting: true
+
+carnival:
+  password:
+    enabled: true
+    encoding: bcrypt
+    unmapped: noop
