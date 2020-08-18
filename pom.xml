@@ -2,6 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.yingzhuo</groupId>
     <artifactId>carnival-examples</artifactId>
@@ -11,6 +12,7 @@
         <module>examples-patchca-stateful</module>
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
+        <module>examples-qrcode</module>
         <module>examples-stringtemplate</module>
     </modules>
     <packaging>pom</packaging>
@@ -21,10 +23,10 @@
         <java.version>1.8</java.version>
         <kotlin.version>1.3.72</kotlin.version>
 
-        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
         <spring.version>5.2.8.RELEASE</spring.version>
-        <spring.seuciryt.version>5.3.3.RELEASE</spring.seuciryt.version>
-        <carnival.version>[1.7.0,)</carnival.version>
+        <spring.seuciryt.version>5.3.4.RELEASE</spring.seuciryt.version>
+        <carnival.version>[1.7.3,)</carnival.version>
         <jackson.version>2.11.2</jackson.version>
         <slf4j.version>1.7.30</slf4j.version>
         <netty.version>4.1.51.Final</netty.version>
@@ -62,6 +64,11 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-password</artifactId>
+                <version>${carnival.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>carnival-spring-boot-starter-qrcode</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
             <dependency>

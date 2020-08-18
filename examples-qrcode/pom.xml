@@ -9,7 +9,7 @@
         <version>0.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>examples-stringtemplate</artifactId>
+    <artifactId>examples-qrcode</artifactId>
 
     <dependencies>
         <!-- spring-boot -->
@@ -21,13 +21,11 @@
         <!-- carnival -->
         <dependency>
             <groupId>com.github.yingzhuo</groupId>
-            <artifactId>carnival-spring-boot-starter-stringtemplate</artifactId>
+            <artifactId>carnival-spring-boot-starter-mvc</artifactId>
         </dependency>
-
-        <!-- mustache -->
         <dependency>
-            <groupId>com.github.spullara.mustache.java</groupId>
-            <artifactId>compiler</artifactId>
+            <groupId>com.github.yingzhuo</groupId>
+            <artifactId>carnival-spring-boot-starter-qrcode</artifactId>
         </dependency>
     </dependencies>
 
