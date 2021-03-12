@@ -1,8 +1,6 @@
-carnival.troubleshooting: true
-
 carnival:
   qrcode:
     enabled: true
-    deafult-size: 200
+    default-size: 200
     default-error-correction: H
     default-margin: 1

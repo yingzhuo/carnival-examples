@@ -1,7 +1,6 @@
-carnival.troubleshooting: true
-
 carnival:
   password:
     enabled: true
-    encoding: bcrypt
-    unmapped: noop
+    password-encoder:
+      encoding: md5
+      unmapped: md5

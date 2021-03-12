@@ -1,5 +1,3 @@
-carnival.troubleshooting: true
-
 carnival:
   id:
     enabled: true
