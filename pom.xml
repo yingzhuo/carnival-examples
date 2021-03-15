@@ -13,6 +13,7 @@
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
         <module>examples-qrcode</module>
+        <module>examples-restful-security</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -20,7 +21,6 @@
         <encoding>UTF-8</encoding>
 
         <java.version>1.8</java.version>
-        <kotlin.version>1.3.72</kotlin.version>
 
         <spring.boot.version>2.4.3</spring.boot.version>
         <spring.version>5.3.4</spring.version>
@@ -76,7 +76,7 @@
             </dependency>
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
-                <artifactId>carnival-spring-boot-starter-stringtemplate</artifactId>
+                <artifactId>carnival-spring-boot-starter-restful-security</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
 
