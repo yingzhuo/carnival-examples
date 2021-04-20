@@ -21,7 +21,6 @@ public class SecurityController {
     public Map<String, Object> login() {
         val token = JwtTokenFactoryUtils.create(
                 JwtTokenInfo.builder()
-                        .putRandomPrivateClaim()
                         .expiresAtFuture(Duration.ofDays(1L))
                         .putPrivateClaim("username", "应卓")
                         .build()
