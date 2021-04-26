@@ -1,7 +1,6 @@
 carnival:
-  id:
+  id-generator:
     enabled: true
     algorithm: snowflake
-    snowflake:
-      worker-id: 0
-      data-center-id: 0
+  id-hash:
+    enabled: true
