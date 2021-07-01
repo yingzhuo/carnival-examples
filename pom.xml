@@ -22,13 +22,13 @@
 
         <java.version>1.8</java.version>
 
-        <spring.boot.version>2.4.5</spring.boot.version>
-        <spring.version>5.3.6</spring.version>
+        <spring.boot.version>2.5.2</spring.boot.version>
+        <spring.version>5.3.8</spring.version>
         <spring.seuciryt.version>5.4.6</spring.seuciryt.version>
-        <carnival.version>[1.8.8,)</carnival.version>
+        <carnival.version>[1.9.8,)</carnival.version>
         <jackson.version>2.12.3</jackson.version>
         <slf4j.version>1.7.30</slf4j.version>
-        <netty.version>4.1.63.Final</netty.version>
+        <netty.version>4.1.65.Final</netty.version>
         <feign.version>11.2</feign.version>
 
         <maven.test.skip>true</maven.test.skip>
