@@ -1,6 +1,6 @@
 package carnival.examples.controller;
 
-import com.github.yingzhuo.carnival.mvc.image.Image;
+import com.github.yingzhuo.carnival.mvc.support.Image;
 import com.github.yingzhuo.carnival.qrcode.util.QRCodeUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
