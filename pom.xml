@@ -13,7 +13,6 @@
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
         <module>examples-qrcode</module>
-        <module>examples-restful-security</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,14 +21,14 @@
 
         <java.version>1.8</java.version>
 
-        <spring.boot.version>2.5.2</spring.boot.version>
+        <spring.boot.version>2.5.3</spring.boot.version>
         <spring.version>5.3.9</spring.version>
-        <spring.seuciryt.version>5.4.6</spring.seuciryt.version>
-        <carnival.version>[1.9.13,)</carnival.version>
+        <spring.seuciryt.version>5.5.1</spring.seuciryt.version>
+        <carnival.version>[1.10.3,)</carnival.version>
         <jackson.version>2.12.4</jackson.version>
-        <slf4j.version>1.7.31</slf4j.version>
+        <slf4j.version>1.7.32</slf4j.version>
         <netty.version>4.1.66.Final</netty.version>
-        <feign.version>11.2</feign.version>
+        <feign.version>11.6</feign.version>
 
         <maven.test.skip>true</maven.test.skip>
         <maven.install.skip>true</maven.install.skip>
@@ -72,11 +71,6 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-qrcode</artifactId>
-                <version>${carnival.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.yingzhuo</groupId>
-                <artifactId>carnival-spring-boot-starter-restful-security</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
 
