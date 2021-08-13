@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 class SnowflakeController {
 
     @GetMapping("/snowflake")
-    public Long snowflake() {
+    Long snowflake() {
         return IdGeneratorUtils.nextId();
     }
 

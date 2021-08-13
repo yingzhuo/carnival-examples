@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 class PasswordEncoderController {
 
     @PostMapping("/encode-pwd")
-    public String encode(@RequestParam("password") String password) {
+    String encode(@RequestParam("password") String password) {
         return PasswordEncoderUtils.encode(password);
     }
 
