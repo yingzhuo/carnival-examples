@@ -1,7 +1,0 @@
-carnival:
-  patchca:
-    enabled: true
-    mode: stateful
-    servlet-filter:
-      url-patterns:
-        - "/captcha.png"

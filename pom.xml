@@ -8,8 +8,6 @@
     <artifactId>carnival-examples</artifactId>
     <version>0.0.0</version>
     <modules>
-        <module>examples-patchca-stateless</module>
-        <module>examples-patchca-stateful</module>
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
         <module>examples-qrcode</module>
@@ -25,11 +23,10 @@
         <spring.boot.version>2.5.3</spring.boot.version>
         <spring.version>5.3.9</spring.version>
         <spring.seuciryt.version>5.5.1</spring.seuciryt.version>
-        <carnival.version>[1.10.4,)</carnival.version>
+        <carnival.version>[1.10.6,)</carnival.version>
         <jackson.version>2.12.4</jackson.version>
         <slf4j.version>1.7.32</slf4j.version>
         <netty.version>4.1.66.Final</netty.version>
-        <feign.version>11.6</feign.version>
 
         <maven.test.skip>true</maven.test.skip>
         <maven.install.skip>true</maven.install.skip>

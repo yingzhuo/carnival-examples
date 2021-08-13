@@ -74,6 +74,9 @@ class AppBootSecurity extends WebSecurityConfigurerAdapter {
         http.rememberMe()
                 .disable();
 
+        http.requestCache()
+                .disable();
+
         http.x509()
                 .disable();
 
@@ -82,7 +85,7 @@ class AppBootSecurity extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/v1/security/login").permitAll()
                 .antMatchers(HttpMethod.GET, "/v1/template/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/favicon.ico", "/**/favicon.ico").permitAll()
+                .antMatchers(HttpMethod.GET, "/**/favicon.ico").permitAll()
                 .antMatchers(HttpMethod.GET, "/static/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/css/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/js/**").permitAll()
