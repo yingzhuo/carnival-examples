@@ -1,6 +1,76 @@
-carnival:
-  password:
+# ----------------------------------------------------------------------------------------------------------------------
+# 核心配置
+# ----------------------------------------------------------------------------------------------------------------------
+spring:
+  config:
+    activate:
+      on-profile:
+        - debug
+debug: true
+---
+
+# ----------------------------------------------------------------------------------------------------------------------
+# 核心配置
+# ----------------------------------------------------------------------------------------------------------------------
+spring:
+  application:
+    name: "carnival-examples"
+  profiles:
+    active: []
+  aop:
+    auto: true
+  main:
+    web-application-type: servlet
+    banner-mode: log
+    allow-bean-definition-overriding: true
+    lazy-initialization: false
+    log-startup-info: true
+    cloud-platform: none
+    register-shutdown-hook: true
+  banner:
+    location: banner.txt
+  jackson:
+    locale: "zh_CN"
+    time-zone: "Asia/Shanghai"
+    date-format: "yyyy-MM-dd HH:mm:ss.SSS"
+    default-property-inclusion: always
+    serialization:
+      indent-output: true
+      fail-on-self-references: true
+      fail-on-empty-beans: false
+      write-dates-as-timestamps: false
+      write-null-map-values: true
+      write-empty-json-arrays: true
+      write-single-elem-arrays-unwrapped: false
+      write-enums-using-to-string: true
+    deserialization:
+      fail-on-unknown-properties: false
+  lifecycle:
+    timeout-per-shutdown-phase: "30s"
+  jmx:
+    enabled: false
+  pid:
+    file: "/var/run/${spring.application.name}/pid"
+    fail-on-write-error: false
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: "1GB"
+      max-request-size: "2GB"
+
+server:
+  port: 8080
+  servlet:
+    context-path: "/"
+  error:
+    whitelabel:
+      enabled: false
+  compression:
     enabled: true
-    password-encoder:
-      encoding: md5
-      unmapped: md5
+    min-response-size: 2KB
+  shutdown: graceful

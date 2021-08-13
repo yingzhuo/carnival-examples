@@ -8,6 +8,8 @@
     <artifactId>carnival-examples</artifactId>
     <version>0.0.0</version>
     <modules>
+        <module>examples-captcha-stateful</module>
+        <module>examples-captcha-stateless</module>
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
         <module>examples-qrcode</module>
@@ -23,7 +25,7 @@
         <spring.boot.version>2.5.3</spring.boot.version>
         <spring.version>5.3.9</spring.version>
         <spring.seuciryt.version>5.5.1</spring.seuciryt.version>
-        <carnival.version>[1.10.6,)</carnival.version>
+        <carnival.version>1.10.6</carnival.version>
         <jackson.version>2.12.4</jackson.version>
         <slf4j.version>1.7.32</slf4j.version>
         <netty.version>4.1.66.Final</netty.version>
@@ -53,8 +55,8 @@
             </dependency>
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
-                <artifactId>carnival-spring-boot-starter-patchca</artifactId>
-                <version>${carnival.version}</version>
+                <artifactId>carnival-spring-boot-starter-captcha</artifactId>
+                <version>1.10.6</version>
             </dependency>
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
