@@ -10,12 +10,29 @@
     <modules>
         <module>examples-captcha-stateful</module>
         <module>examples-captcha-stateless</module>
+        <module>examples-graphql</module>
         <module>examples-id-snowflake</module>
         <module>examples-password-encoder</module>
         <module>examples-qrcode</module>
         <module>examples-security-jwt</module>
     </modules>
     <packaging>pom</packaging>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <properties>
         <encoding>utf-8</encoding>
@@ -25,8 +42,8 @@
         <spring.boot.version>2.5.4</spring.boot.version>
         <spring.version>5.3.9</spring.version>
         <spring.seuciryt.version>5.5.2</spring.seuciryt.version>
-        <carnival.version>[1.10.11,)</carnival.version>
-        <jackson.version>2.12.4</jackson.version>
+        <carnival.version>[1.10.15,)</carnival.version>
+        <jackson.version>2.12.5</jackson.version>
         <slf4j.version>1.7.32</slf4j.version>
         <netty.version>4.1.67.final</netty.version>
 
@@ -76,6 +93,11 @@
             <dependency>
                 <groupId>com.github.yingzhuo</groupId>
                 <artifactId>carnival-spring-boot-starter-security</artifactId>
+                <version>${carnival.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.yingzhuo</groupId>
+                <artifactId>carnival-spring-boot-starter-graphql</artifactId>
                 <version>${carnival.version}</version>
             </dependency>
 
